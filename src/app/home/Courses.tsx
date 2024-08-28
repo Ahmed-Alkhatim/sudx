@@ -5,9 +5,9 @@ export default () => {
         {
             name: 'UI/UX',
             courses: [
-                { title: "AWS Certified solutions Architect", description: 'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor', duration: '20 Hours', instructor: 'Ahmed', origin_price: '$20', current_price: '$10', image_cover: 'course1.jpg' },
-                { title: "AWS Certified solutions Architect", description: 'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor', duration: '20 Hours', instructor: 'Ahmed', origin_price: '$20', current_price: '$10', image_cover: 'course2.jpg' },
-                { title: "AWS Certified solutions Architect", description: 'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor', duration: '20 Hours', instructor: 'Ahmed', origin_price: '$20', current_price: '$10', image_cover: 'course3.jpg' },
+                { title: "AWS Certified solutions Architect", description: 'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor', duration: '20 Hours', instructor: 'Ahmed', origin_price: '$20', current_price: '$10', image_cover: '/course1.jpg' },
+                { title: "AWS Certified solutions Architect", description: 'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor', duration: '20 Hours', instructor: 'Ahmed', origin_price: '$20', current_price: '$10', image_cover: '/course2.jpg' },
+                { title: "AWS Certified solutions Architect", description: 'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor', duration: '20 Hours', instructor: 'Ahmed', origin_price: '$20', current_price: '$10', image_cover: '/course3.jpg' },
             ]
         }
 
@@ -19,8 +19,8 @@ export default () => {
                 {categories[0].courses.map((course) =>
                     <div className="w-[244px] p-4 rounded-[20px] border border-gray-1 space-y-4 text-gray-2 flex-shrink-0">
 
-                        <div className="rounded-[20px] overflow-hidden ">
-                            <img src="/course1.jpg" alt="" />
+                        <div className="rounded-[20px] h-[170px] overflow-hidden ">
+                            <img src={course.image_cover} alt="" className="h-full w-full" />
                         </div>
 
                         <div className="flex justify-between text-[12px] ">
