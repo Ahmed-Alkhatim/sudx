@@ -1,12 +1,17 @@
 import Container from "@/app/components/Container"
 import Search from "./Search"
 import Categories from "./Categories"
+import Courses from "./Courses"
 export default () => {
 
     return(
         <Container>
-            <Search />
-            <Categories className = "mt-5"/>
+            <div className="space-y-6 pb-32">
+                <Search />
+                <Categories />
+                <Courses />
+                <Courses />
+            </div>
         </Container>
     )
 } 
